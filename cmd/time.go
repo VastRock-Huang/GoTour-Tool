@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/gotour/internal/timer"
+	"github.com/gotour-tool/internal/timer"
 	"github.com/spf13/cobra"
 	"log"
 	"strconv"

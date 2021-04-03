@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/gotour/internal/word"
+	"github.com/gotour-tool/internal/word"
 	"github.com/spf13/cobra"
 	"log"
 	"strings"
