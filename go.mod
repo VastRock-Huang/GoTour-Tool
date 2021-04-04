@@ -1,4 +1,4 @@
-module github.com/gotour-tool
+module github.com/vastrock-huang/gotour-tool
 
 go 1.14
 

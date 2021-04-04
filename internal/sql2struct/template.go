@@ -1,7 +1,7 @@
 package sql2struct
 
 import (
-	"github.com/gotour-tool/internal/word"
+	"github.com/vastrock-huang/gotour-tool/internal/word"
 	"os"
 	"text/template"
 )

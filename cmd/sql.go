@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/gotour-tool/internal/sql2struct"
 	"github.com/spf13/cobra"
+	"github.com/vastrock-huang/gotour-tool/internal/sql2struct"
 	"log"
 )
 

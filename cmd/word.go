@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/gotour-tool/internal/word"
 	"github.com/spf13/cobra"
+	"github.com/vastrock-huang/gotour-tool/internal/word"
 	"log"
 	"strings"
 )
