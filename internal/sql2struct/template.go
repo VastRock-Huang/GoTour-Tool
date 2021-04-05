@@ -6,18 +6,18 @@ import (
 	"text/template"
 )
 
-// 结构体模板
-// type 大写驼峰的表名称 struct {
-// 	// 注释
+//结构体模板
+//type 大写驼峰的数据表名称 struct {
+//	// 注释
 //	字段名	字段类型  json标签
-// 	// 注释		//若没有注释则直接
+//	// 注释		//若没有注释则直接使用字段名
 //	字段名	字段类型	 json标签 	//若没有类型名称则只有字段名
 //	...
-// }
+//}
 //
-// func (model 大写驼峰的表名称) TableName() string {
+//func (model 大写驼峰的表名称) TableName() string {
 //		return "表名称"
-// }
+//}
 const structTpl = `type {{ .TableName | ToCamelCase }} struct {
 {{range .Columns}} {{ $length := len .Comment }} 	{{ if gt $length 0 }} // {{ .Comment }} {{else}} // {{.Name}} {{end}}
 	{{ $typeLen := len .Type }}{{ if gt $typeLen 0 }}{{ .Name | ToCamelCase }} {{.Type}} {{.Tag}}{{else}}{{.Name}} {{end}}

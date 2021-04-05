@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gotour/cmd"
+	"github.com/vastrock-huang/gotour-tool/cmd"
 	"log"
 )
 

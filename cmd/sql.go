@@ -25,8 +25,8 @@ var (
 
 var sql2structCmd = &cobra.Command{
 	Use:   "struct",
-	Short: "sql转换为结构体",
-	Long:  "sql转换为Go结构体文本",
+	Short: "sql数据表转换为结构体",
+	Long:  "sql数据表转换为Go结构体文本",
 	Run: func(cmd *cobra.Command, args []string) {
 		//数据库基本信息
 		dbInfo := &sql2struct.DBInfo{

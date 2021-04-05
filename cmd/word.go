@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+//处理模式
 const (
 	ModeUpper = iota + 1
 	ModeLower
@@ -25,8 +26,8 @@ var wordDesc = strings.Join([]string{
 	"5: 驼峰单词转为下划线单词",
 }, "\n")
 
-var str string
-var mode int8
+var str string //待处理字符串
+var mode int8  //处理模式
 
 var wordCmd = &cobra.Command{
 	Use:   "word",   //子命令的命令标识
